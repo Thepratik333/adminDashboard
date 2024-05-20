@@ -70,14 +70,14 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <section className="widget-container flex justify-between">
+      <section className="widget-container">
         <WidgetItem percent={90} amount={true} value={340000} heading="Revenue" color="rgb(0,115,255)" />
         <WidgetItem percent={-14} value={400} heading="Users" color="rgb(0 198 202)" />
         <WidgetItem percent={80} value={23000} heading="Transactions" color="rgb(255 196 0)" />
         <WidgetItem percent={30} value={1000} heading="Products" color="rgb(76 0 255)" />
       </section>
 
-      <section className="graph-container gap-[18px] mt-6">
+      <section className="graph-container mt-6">
         <div className="revenue-chart">
           <h2>Revenue & Transaction</h2>
           <BarChart

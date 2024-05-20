@@ -42,11 +42,11 @@ function Dashboard() {
     return (
         <>
             {phoneActive && (
-                <button id="hamburger" onClick={() => setShowModal(true)}>
+                <button  className='z-50' id="hamburger" onClick={() => setShowModal(true)}>
                     <HiMenuAlt4 />
                 </button>
             )}
-            <aside 
+            <aside className='z-50'
             style={
                 phoneActive
                   ? {
@@ -71,22 +71,22 @@ function Dashboard() {
                     <nav className="flex-1 ">
                         <h2 className=' m-4 text-[#808080]'>Dashboard</h2>
                         <ul className="space-y-2 mx-[20px] mt-[10px]">
-                            <li><Link to="" className=" py-2 px-4 flex items-center hover:bg-gray-300 rounded-lg"><RiDashboardFill className=' mr-[4px]' />Dashboard</Link></li>
-                            <li><Link to="/products" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><RiShoppingBag3Fill className='mr-[4px]' />Products</Link></li>
-                            <li><Link to="/customers" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><IoIosPeople className='mr-[4px]' />Customers</Link></li>
-                            <li><Link to="/transaction" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><AiFillFileText className='mr-[4px]' />Transaction</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="" className=" py-2 px-4 flex items-center hover:bg-gray-300 rounded-lg"><RiDashboardFill className=' mr-[4px]' />Dashboard</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/products" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><RiShoppingBag3Fill className='mr-[4px]' />Products</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/customers" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><IoIosPeople className='mr-[4px]' />Customers</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/transaction" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><AiFillFileText className='mr-[4px]' />Transaction</Link></li>
                         </ul>
                         <h2 className=' m-4 text-[#808080]'>Charts</h2>
                         <ul className="space-y-2 mx-[20px] mt-[10px]">
-                            <li><Link to="/barchart" className=" py-2 px-4 flex items-center hover:bg-gray-300 rounded-lg"><FaChartBar className=' mr-[4px]' />Bar</Link></li>
-                            <li><Link to="/pie" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaChartPie className='mr-[4px]' />Pie</Link></li>
-                            <li><Link to="/line" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaChartLine className='mr-[4px]' />Line</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/barchart" className=" py-2 px-4 flex items-center hover:bg-gray-300 rounded-lg"><FaChartBar className=' mr-[4px]' />Bar</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/pie" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaChartPie className='mr-[4px]' />Pie</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/line" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaChartLine className='mr-[4px]' />Line</Link></li>
                         </ul>
                         <h2 className=' m-4 text-[#808080]'>Apps</h2>
                         <ul className="space-y-2 mx-[20px] mt-[10px]">
-                            <li><Link to="/coupon" className=" py-2 px-4 flex items-center hover:bg-gray-300 rounded-lg"><RiCoupon3Fill className=' mr-[4px]' />Coupon</Link></li>
-                            <li><Link to="/stopwatch" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaStopwatch className='mr-[4px]' />StopWatch</Link></li>
-                            <li><Link to="/Toss" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaGamepad className='mr-[4px]' />Toss</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/coupon" className=" py-2 px-4 flex items-center hover:bg-gray-300 rounded-lg"><RiCoupon3Fill className=' mr-[4px]' />Coupon</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/stopwatch" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaStopwatch className='mr-[4px]' />StopWatch</Link></li>
+                            <li onClick={() => setShowModal(false)}><Link to="/Toss" className=" py-2 px-4 hover:bg-gray-300 flex items-center rounded-lg"><FaGamepad className='mr-[4px]' />Toss</Link></li>
                         </ul>
                     </nav>
 
